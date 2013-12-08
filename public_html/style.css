@@ -1,0 +1,14 @@
+body {
+
+}
+table {
+	width:100%
+}
+th {
+	text-align:left
+    
+    }
+tbody>tr:nth-child(odd)>td>div {
+  width:100%;
+  background-color: #99ff99;
+}
