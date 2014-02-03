@@ -59,22 +59,7 @@ function sort_table()
 		//$Element.children('td').wrapInner('<div></div>').children('div').slideUp();
 		//$Element.children('td').wrapInner('<div></div>').children('div').css({position:'absolute', top:iFr}).animate({top:iTo}, 500);
 				//var auto_adjust_amt = 0;
-				$Element.children('td').children('div').css({position:'absolute', top:iFr}).animate({top:iTo}, 
-																															500,
-																															function(){
-																																var top1 = $(this).offset().top;
-																																//$(this).removeAttr('style');
-																																var top2 = $(this).offset().top;
-																																console.log(top1 + ' -> ' + top2);
-																																var auto_adjust_amt = (top1-top2);
-																																if ($(this).parent().is('tr:first-child > td:first-child'))
-																																{
-																																	console.log('Updating offset by: ' +auto_adjust_amt);
-																																	auto_shift_offset += auto_adjust_amt;
-																																	console.log('New Offset: ' + auto_shift_offset);
-																																}
-																																
-																															} );
+				$Element.children('td').children('div').css({position:'absolute', top:iFr}).animate({top:iTo}, 500,} );
 			  //console.log('Audo adjust amt: ' + auto_adjust_amt);
 			  //auto_shift_offset += auto_adjust_amt;
 			  console.log('Auto shfit offset: ' + auto_shift_offset);
